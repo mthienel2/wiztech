@@ -1,4 +1,10 @@
 import Link from "next/link";
+import localFont from "next/font/local";
+
+const shermlockFont = localFont({
+  src: "../../fonts/Shermlock.ttf",
+  display: "swap",
+});
 
 export default function QuestTreeLayout({
   children,
@@ -7,8 +13,10 @@ export default function QuestTreeLayout({
 }>) {
   return (
     <div className="flex min-h-screen">
-      <nav className="w-64 border-r p-4 flex flex-col space-y-2">
-        <h2 className="font-semibold mb-2">Worlds</h2>
+      <nav
+        className={`w-64 border-r p-4 flex flex-col space-y-2 ${shermlockFont.className}`}
+      >
+        <h2 className="text-3xl text-yellow-300 mb-2">Worlds</h2>
         <Link
           href="/guides/quest-tree/wizardcity"
           className="hover:text-blue-600"

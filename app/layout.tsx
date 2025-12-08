@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import localFont from "next/font/local";
+
+const shermlockFont = localFont({
+  src: "./fonts/Shermlock.ttf",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
