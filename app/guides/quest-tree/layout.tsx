@@ -16,7 +16,7 @@ export default function QuestTreeLayout({
       <nav
         className={`w-64 border-r p-4 flex flex-col space-y-2 ${shermlockFont.className}`}
       >
-        <h2 className="text-3xl text-yellow-300 mb-2">Worlds</h2>
+        <h1 className="text-3xl text-yellow-300 mb-2">Worlds</h1>
         <Link
           href="/guides/quest-tree/wizardcity"
           className="hover:text-blue-600"
