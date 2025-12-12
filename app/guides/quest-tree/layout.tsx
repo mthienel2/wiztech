@@ -1,5 +1,6 @@
 import Link from "next/link";
 import localFont from "next/font/local";
+import Image from "next/image";
 
 const shermlockFont = localFont({
   src: "../../fonts/Shermlock.ttf",
@@ -21,13 +22,25 @@ export default function QuestTreeLayout({
           href="/guides/quest-tree/wizardcity"
           className="hover:text-blue-600"
         >
-          Wizard City
+          <Image
+            src="/Wizard_City.png"
+            width={96}
+            height={96}
+            alt="Wizard City Logo"
+          ></Image>
+          <span className="px-2">Wizard City</span>
         </Link>
         <Link
           href="/guides/quest-tree/krokotopia"
           className="hover:text-blue-600"
         >
-          Krokotopia
+          <Image
+            src="/Krokotopia.png"
+            width={96}
+            height={96}
+            alt="Krokotopia Logo"
+          ></Image>
+          <span className="px-2">Krokotopia</span>
         </Link>
       </nav>
       <main className="flex-1 p-6">{children}</main>
