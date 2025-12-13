@@ -42,6 +42,18 @@ export default function QuestTreeLayout({
           ></Image>
           <span className="px-2">Krokotopia</span>
         </Link>
+        <Link
+          href="/guides/quest-tree/marleybone"
+          className="hover:text-blue-600"
+        >
+          <Image
+            src="/Krokotopia.png"
+            width={96}
+            height={96}
+            alt="Krokotopia Logo"
+          ></Image>
+          <span className="px-2">Marleybone</span>
+        </Link>
       </nav>
       <main className="flex-1 p-6">{children}</main>
     </div>
